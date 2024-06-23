@@ -1,4 +1,9 @@
 package tp.taskman.repositories;
 
-public interface NotificationRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import tp.taskman.entities.Notification;
+
+public interface NotificationRepository extends JpaRepository<Notification, Long> {
+    @Override
+    boolean existsById(Long aLong);
 }

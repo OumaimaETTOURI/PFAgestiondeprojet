@@ -1,7 +1,8 @@
 package tp.taskman.services;
 
+import org.springframework.stereotype.Service;
 import tp.taskman.entities.Equipe;
-
+@Service
 public interface EquipeService {
     boolean deleteEquipe(Long id);
 

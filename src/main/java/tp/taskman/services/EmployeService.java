@@ -1,7 +1,8 @@
 package tp.taskman.services;
 
+import org.springframework.stereotype.Service;
 import tp.taskman.entities.Employe;
-
+@Service
 public interface EmployeService {
     Employe getEmployeById(Long id);
 

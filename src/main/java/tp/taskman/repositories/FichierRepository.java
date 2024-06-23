@@ -1,4 +1,9 @@
 package tp.taskman.repositories;
 
-public interface FichierRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import tp.taskman.entities.Fichier;
+
+public interface FichierRepository extends JpaRepository<Fichier, Long> {
+    @Override
+    boolean existsById(Long aLong);
 }

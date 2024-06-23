@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import tp.taskman.entities.Equipe;
 import tp.taskman.services.EquipeService;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/equipes")
 public class EquipeController {

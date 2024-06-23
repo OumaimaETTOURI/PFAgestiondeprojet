@@ -1,6 +1,5 @@
 package tp.taskman.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +14,6 @@ public class EmployeController {
 
     private final EmployeService employeService;
 
-    @Autowired
     public EmployeController(EmployeService employeService) {
         this.employeService = employeService;
     }

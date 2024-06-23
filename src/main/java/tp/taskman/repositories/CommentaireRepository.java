@@ -1,4 +1,10 @@
 package tp.taskman.repositories;
 
-public interface CommentaireRepository {
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import tp.taskman.entities.Commentaire;
+
+public interface CommentaireRepository extends JpaRepository<Commentaire, Long> {
+    @Override
+    boolean existsById(Long aLong);
 }

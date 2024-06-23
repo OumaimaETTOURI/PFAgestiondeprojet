@@ -1,4 +1,9 @@
 package tp.taskman.repositories;
 
-public interface EquipeRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import tp.taskman.entities.Equipe;
+
+public interface EquipeRepository extends JpaRepository<Equipe, Long> {
+    @Override
+    boolean existsById(Long aLong);
 }
